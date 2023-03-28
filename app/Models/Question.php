@@ -13,4 +13,9 @@ class Question extends Model
         'name',
         'theme_id'
     ];
+
+    public function theme()
+    {
+        return $this->belongsTo(Theme::class);
+    }
 }

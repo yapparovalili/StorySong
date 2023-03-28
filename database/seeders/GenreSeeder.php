@@ -20,10 +20,10 @@ class GenreSeeder extends Seeder
             ['name' => 'Рок', 'description' => 'Энергичное электрическое звучание для любителей оторваться'],
             ['name' => 'Рэп/Хип-Хоп', 'description' => 'Ритмичный вокал, свежее звучание и перкуссионный бит'],
             ['name' => 'R&B', 'description' => 'Проникновенный вокал, грув и крутая атмосфера'],
-            ['name' => 'Джаз', 'description' => ''],
-            ['name' => 'Этно', 'description' => ''],
-            ['name' => 'Поп', 'description' => ''],
-            ['name' => 'Альтернатива', 'description' => ''],
+//            ['name' => 'Джаз', 'description' => ''],
+//            ['name' => 'Этно', 'description' => ''],
+//            ['name' => 'Поп', 'description' => ''],
+//            ['name' => 'Альтернатива', 'description' => ''],
         ];
         foreach ($genres as $genre){
             Genre::query()->create($genre);

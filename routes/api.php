@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+//Route::middleware('auth:api')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
+
+Route::get('/genre', [\App\Http\Controllers\GenreController::class, 'index']);
+Route::get('/product', [\App\Http\Controllers\OrderController::class, 'get_products']);
+Route::get('/theme', [\App\Http\Controllers\OrderController::class, 'get_themes']);
